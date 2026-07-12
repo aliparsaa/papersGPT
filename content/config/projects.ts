@@ -39,22 +39,22 @@ export interface ProjectConfig {
 
 // ─── Project: lift-thread-store ──────────────────────────────────────────────
 
-const liftThreadStore: ProjectConfig = {
+const DoctoraramisStore: ProjectConfig = {
   projectId: 'lift-thread-store',
-  siteUrl: 'https://liftthread.ir',
-  brandName: 'لیفت‌ترد',
+  siteUrl: 'https://Doctoraramis.ir',
+  brandName: 'استایژن',
   brandTone: 'clinical',
   primaryCategory: 'نخ لیفت صورت و بدن',
   authorName: 'تیم محتوای لیفت‌ترد',
-  authorUrl: 'https://liftthread.ir/about',
+  authorUrl: 'https://Doctoraramis.ir/about',
   internalLinkTargets: [
-    { title: 'فروشگاه نخ لیفت', url: 'https://liftthread.ir/products', type: 'product' },
-    { title: 'درباره لیفت‌ترد', url: 'https://liftthread.ir/about', type: 'landing' },
-    { title: 'تماس با ما', url: 'https://liftthread.ir/contact', type: 'landing' },
-    { title: 'مقالات نخ لیفت', url: 'https://liftthread.ir/blog/threads', type: 'category' },
-    { title: 'راهنمای خرید نخ لیفت', url: 'https://liftthread.ir/blog/buying-guide', type: 'guide' },
-    { title: 'نخ لیفت صورت', url: 'https://liftthread.ir/products/face-threads', type: 'category' },
-    { title: 'نخ لیفت بدن', url: 'https://liftthread.ir/products/body-threads', type: 'category' },
+    { title: 'فروشگاه نخ لیفت', url: 'https://Doctoraramis.ir/products', type: 'product' },
+    { title: 'درباره لیفت استایژن', url: 'https://Doctoraramis.ir/contactus', type: 'landing' },
+    { title: 'تماس با ما', url: 'https://Doctoraramis.ir/contact', type: 'landing' },
+    { title: 'مقالات نخ لیفت', url: 'https://Doctoraramis.ir/blog/', type: 'category' },
+    { title: 'راهنمای خرید نخ لیفت', url: 'https://Doctoraramis.ir/blog/', type: 'guide' },
+    { title: 'نخ لیفت صورت', url: 'https://Doctoraramis.ir/products/', type: 'category' },
+    { title: 'نخ لیفت بدن', url: 'https://Doctoraramis.ir/products/', type: 'category' },
   ],
   keywords: [
     // PDO Threads cluster
@@ -145,11 +145,11 @@ const steigenBrand: ProjectConfig = {
   internalLinkTargets: [
     { title: 'فروشگاه استایژن', url: 'https://steigen.ir/products', type: 'product' },
     { title: 'درباره استایژن', url: 'https://steigen.ir/about', type: 'landing' },
-    { title: 'تماس با ما', url: 'https://steigen.ir/contact', type: 'landing' },
-    { title: 'مقالات مراقبت پوست', url: 'https://steigen.ir/blog/skincare', type: 'category' },
-    { title: 'راهنمای روتین پوست', url: 'https://steigen.ir/blog/skin-routine', type: 'guide' },
-    { title: 'محصولات پوستی', url: 'https://steigen.ir/products/skincare', type: 'category' },
-    { title: 'محصولات مو', url: 'https://steigen.ir/products/haircare', type: 'category' },
+    { title: 'تماس با ما', url: 'https://steigen.ir/contactus', type: 'landing' },
+    { title: 'مقالات مراقبت پوست', url: 'https://steigen.ir/blog/', type: 'category' },
+    { title: 'راهنمای روتین پوست', url: 'https://steigen.ir/articles', type: 'guide' },
+    { title: 'محصولات پوستی', url: 'https://steigen.ir/products/', type: 'category' },
+    { title: 'محصولات مو', url: 'https://steigen.ir/products/', type: 'category' },
   ],
   keywords: [
     // Brand & Product Education
@@ -220,7 +220,7 @@ const steigenBrand: ProjectConfig = {
 // ─── Registry ────────────────────────────────────────────────────────────────
 
 export const projects: Record<string, ProjectConfig> = {
-  'lift-thread-store': liftThreadStore,
+  'lift-thread-store': DoctoraramisStore,
   'steigen-brand': steigenBrand,
 };
 

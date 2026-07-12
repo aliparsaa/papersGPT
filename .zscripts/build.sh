@@ -49,7 +49,7 @@ if [ -d "$NEXTJS_PROJECT_DIR/mini-services" ]; then
 
     # 复制 mini-services-start.sh 到 mini-services-dist 目录
     echo "  - 复制 mini-services-start.sh 到 $BUILD_DIR"
-    cp "$SCRIPT_DIR/mini-services-start.sh" "$BUILD_DIR/mini-services-start.sh"
+    copy "$SCRIPT_DIR/mini-services-start.sh" "$BUILD_DIR/mini-services-start.sh"
     chmod +x "$BUILD_DIR/mini-services-start.sh"
 else
     echo "ℹ️  mini-services 目录不存在，跳过"
@@ -61,27 +61,27 @@ echo "📦 收集构建产物到 $BUILD_DIR..."
 # 复制 Next.js standalone 构建输出
 if [ -d ".next/standalone" ]; then
     echo "  - 复制 .next/standalone"
-    cp -r .next/standalone "$BUILD_DIR/next-service-dist/"
+    copy -r .next/standalone "$BUILD_DIR/next-service-dist/"
 fi
 
 # 复制 Next.js 静态文件
 if [ -d ".next/static" ]; then
     echo "  - 复制 .next/static"
     mkdir -p "$BUILD_DIR/next-service-dist/.next"
-    cp -r .next/static "$BUILD_DIR/next-service-dist/.next/"
+     -r .next/static "$BUILD_DIR/next-service-dist/.next/"
 fi
 
 # 复制 public 目录
 if [ -d "public" ]; then
     echo "  - 复制 public"
-    cp -r public "$BUILD_DIR/next-service-dist/"
+    copy -r public "$BUILD_DIR/next-service-dist/"
 fi
 
 # 将测试环境数据库复制到构建产物中，生产环境直接使用这份数据库
 if [ -f "./db/custom.db" ]; then
     echo "🗄️  复制测试环境数据库到构建产物..."
     mkdir -p "$BUILD_DIR/db"
-    cp -r ./db/. "$BUILD_DIR/db/"
+    copy -r ./db/. "$BUILD_DIR/db/"
 
     echo "🗄️  同步构建产物中的数据库结构..."
     DATABASE_URL="file:$BUILD_DIR/db/custom.db" bun run db:push
@@ -95,14 +95,14 @@ fi
 # 复制 Caddyfile（如果存在）
 if [ -f "Caddyfile" ]; then
     echo "  - 复制 Caddyfile"
-    cp Caddyfile "$BUILD_DIR/"
+    copy Caddyfile "$BUILD_DIR/"
 else
     echo "ℹ️  Caddyfile 不存在，跳过"
 fi
 
 # 复制 start.sh 脚本
 echo "  - 复制 start.sh 到 $BUILD_DIR"
-cp "$SCRIPT_DIR/start.sh" "$BUILD_DIR/start.sh"
+copy "$SCRIPT_DIR/start.sh" "$BUILD_DIR/start.sh"
 chmod +x "$BUILD_DIR/start.sh"
 
 # 打包到 $BUILD_DIR.tar.gz

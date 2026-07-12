@@ -36,7 +36,7 @@ export function BlogLayout({
   return (
     <div className="min-h-screen flex flex-col">
       {/* ── Header ─────────────────────────────────────────────────────── */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
         <div className="container mx-auto max-w-5xl flex items-center justify-between h-14 px-4">
           <Link
             href="/"
