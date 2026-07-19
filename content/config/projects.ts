@@ -45,16 +45,16 @@ const DoctoraramisStore: ProjectConfig = {
   brandName: 'استایژن',
   brandTone: 'clinical',
   primaryCategory: 'نخ لیفت صورت و بدن',
-  authorName: 'تیم محتوای لیفت‌ترد',
+  authorName: 'گروه آرامیس',
   authorUrl: 'https://Doctoraramis.ir/about',
   internalLinkTargets: [
-    { title: 'فروشگاه نخ لیفت', url: 'https://Doctoraramis.ir/products', type: 'product' },
-    { title: 'درباره لیفت استایژن', url: 'https://Doctoraramis.ir/contactus', type: 'landing' },
+    { title: 'فروشگاه نخ لیفت', url: 'https://Doctoraramis.ir/cryotherapy', type: 'product' },
+    { title: 'درباره نخ لیفت استایژن', url: 'https://Doctoraramis.ir/contact', type: 'landing' },
     { title: 'تماس با ما', url: 'https://Doctoraramis.ir/contact', type: 'landing' },
     { title: 'مقالات نخ لیفت', url: 'https://Doctoraramis.ir/blog/', type: 'category' },
     { title: 'راهنمای خرید نخ لیفت', url: 'https://Doctoraramis.ir/blog/', type: 'guide' },
     { title: 'نخ لیفت صورت', url: 'https://Doctoraramis.ir/products/', type: 'category' },
-    { title: 'نخ لیفت بدن', url: 'https://Doctoraramis.ir/products/', type: 'category' },
+    { title: 'نخ لیفت بدن', url: 'https://Doctoraramis.ir/shop/', type: 'category' },
   ],
   keywords: [
     // PDO Threads cluster

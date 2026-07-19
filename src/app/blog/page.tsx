@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
   return {
     title: `${BRAND_NAME} | وبلاگ`,
     description:
-      "مقالات آموزشی و کاربردی درباره جوانسازی پوست، نخ لیفت، بوتاکس، فیلر، کاشت مو و مراقبت از پوست در وبلاگ لیفت‌ترد.",
+      "مقالات آموزشی و کاربردی درباره جوانسازی پوست، نخ لیفت، بوتاکس، فیلر، کاشت مو و مراقبت از پوست در وبلاگ ",
     openGraph: {
       title: `${BRAND_NAME} | وبلاگ`,
       description:

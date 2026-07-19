@@ -127,5 +127,5 @@ export function getRelatedPosts(
 /**
  * Site-wide URL used for canonical / OG / sitemap generation.
  */
-export const SITE_URL = "https://liftthread.ir";
-export const BRAND_NAME = "لیفت‌ترد";
+export const SITE_URL = "https://aisy.ir";
+export const BRAND_NAME = "نخ لیفت استایژن";
